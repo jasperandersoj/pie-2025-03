@@ -128,23 +128,19 @@
 						</header>
 						<div class="image featured"><img src="images/Exploded View.png" alt="" /></div>
 						<p>
-							Nascetur volutpat nibh ullamcorper vivamus at purus. Cursus ultrices porttitor sollicitudin
-							imperdiet
-							at pretium tellus in euismod a integer sodales neque. Nibh quis dui quis mattis eget
-							imperdiet venenatis
-							feugiat. Neque primis ligula cum erat aenean tristique luctus risus ipsum praesent iaculis.
-							Fermentum elit
-							fringilla consequat dis arcu. Pellentesque mus tempor vitae pretium sodales porttitor lacus.
-							Phasellus
-							egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra
-							magna.
+							In order to smoothly track the stars, it’s crucial to be able to make miniscule movements at an extremely slow rate. The way we chose to accomplish this is through the use of a Cycloidal Drive: An unconventional type of ‘gearbox’ that can provide gear reductions inline with a shaft, at extremely high precision and with very small amounts of backlash if designed properly. The drive works by turning a flower-shaped ‘gear’ eccentrically, causing it to walk around, meshing with an outer circle of pins, and turning an internal ring of pins. There is conventionally one more pin than there are lobes, which creates a gear ratio of 1:# lobes.
 						</p>
 						<p>
-							Eleifend auctor turpis magnis sed porta nisl pretium. Aenean suspendisse nulla eget sed
-							etiam parturient
-							orci cursus nibh. Quisque eu nec neque felis laoreet diam morbi egestas. Dignissim cras
-							rutrum consectetur
-							ut penatibus fermentum nibh erat malesuada varius.
+							For our purposes, we took into account a number of factors. First, the earth rotates at a rate of 0.025 degrees per minute. Secondly, our stepper motors operate at a rate of 200 steps/revolution, and we want to utilize full steps rather than micro-stepping for full accuracy. Finally, we need to follow the rotation of the earth very closely, to ensure that the star we’re interested in stays perfectly centered for long exposure photography. These factors ultimately led us to choose a 180:1 gear reduction, which gives us a rotation rate of 0.01 degrees per step on the stepper motor. This resolution ultimately provided us excellent results.
+						</p>
+						<p>
+							We chose to accomplish this ratio through a two-stage reduction. By using a 10:1 drive, inline with an 18:1, we could achieve extremely accurate results without too much additional mechanical complexity.
+						</p>
+						<p>
+							The entire assembly is made from stacked 1/4inch plates, sandwiching the cycloids in between, using press-fit pins as fasteners. While this ultimately wasn’t the best choice in terms of ease of assembly with the tools we have available, it was relatively straightforward and created a beautiful finished product. Instead of bearings, due to the compact nature of the assembly, we were forced to use low-friction bushings that combine thrust and radial support. Due to the low speeds/wear this assembly undergoes, this proved to be a perfectly reasonable choice.
+						</p>
+						<p>
+							For machining, we chose to design the entire structure to be manufactured out 1/4inch 6061 plate aluminum. We were able to source this easily, and it allowed us to be flexible in our machining strategy. While we initially intended to waterjet these parts and post-process them afterwards, we milled the major components on a fixture plate for simplicity and accuracy.
 						</p>
 					</section>
 					<section>
